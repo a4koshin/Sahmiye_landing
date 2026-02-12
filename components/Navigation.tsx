@@ -3,15 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navbar } from "@/lib/navigation";
-import { Button } from "./ui/button";
 import { RiMenu5Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
   return (
     <header className="sticky top-0 z-50 w-full bg-white backdrop-blur-xl border border-gray-100">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
