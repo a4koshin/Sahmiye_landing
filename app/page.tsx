@@ -13,30 +13,24 @@ const GooglePlayMark = () => (
 
 const HomePage = () => {
   return (
-    <main className="bg-slate-100 px-4 py-10 sm:px-6 lg:px-8">
+    <main className="bg-slate-100">
       <section
-        className="relative mx-auto flex min-h-[70vh] w-full max-w-6xl items-center justify-center overflow-hidden rounded-3xl bg-cover bg-center bg-no-repeat"
+        className="relative flex min-h-[calc(100vh-5rem)] w-full items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/heroimg.jpeg')" }}
       >
-        <div className="absolute inset-0 bg-slate-900/50" />
-
-        <div className="relative z-10 flex max-w-3xl flex-col items-center px-6 text-center">
-          <p className="rounded-full border border-white/30 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-white/90">
-            Smart Property Platform
-          </p>
-
-          <h1 className="mt-4 text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-            Sahmiye Application
+        <div className="absolute inset-0 bg-black/45" />
+        <div className="relative z-10 flex flex-col items-center px-6 text-center">
+          <h1 className="mt-4 text-5xl font-bold leading-tight text-white sm:text-6xl md:text-7xl">
+            Sahmiye
           </h1>
-
-          <p className="mt-4 max-w-2xl text-base leading-7 text-white/90 sm:text-lg">
-            Where you get your Space
+          <p className="mt-2 max-w-2xl text-base leading-7 text-white/90 sm:text-lg">
+            Smart way to find property
           </p>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Button
               asChild
-              size="lg"
+              size="sm"
               className="h-14 rounded-xl border border-slate-300 bg-black px-4 text-white hover:bg-slate-900"
             >
               <Link href="#" aria-label="Get it on Google Play">
@@ -52,7 +46,7 @@ const HomePage = () => {
 
             <Button
               asChild
-              size="lg"
+              size="sm"
               className="h-14 rounded-xl border border-slate-300 bg-black px-4 text-white hover:bg-slate-900"
             >
               <Link href="#" aria-label="Download on the App Store">
@@ -68,7 +62,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="mx-auto max-w-6xl mt-24 px-4 pb-16 sm:px-6 lg:px-8 lg:pb-20">
+      <section className="mx-auto mt-16 max-w-6xl px-4 pb-16 sm:px-6 lg:px-8 lg:pb-20">
         <div className="mb-8 flex flex-col gap-2 text-center lg:text-left">
           <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">
             Everything You Need for Your Next Move
