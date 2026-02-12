@@ -5,7 +5,7 @@ import {
   FaApple,
   FaGooglePlay,
 } from "react-icons/fa";
-
+import {homeCards} from "@/lib/data"
 
 const HomePage = () => {
 
