@@ -6,9 +6,13 @@ import { navbar } from "@/lib/navigation";
 import { RiMenu5Line } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
   return (
     <header className="sticky top-0 z-50 w-full bg-white backdrop-blur-xl border border-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -36,9 +40,14 @@ const Navigation = () => {
                 <span className="relative z-10">{item.name}</span>
                 <span className="absolute inset-x-3 bottom-1 h-0.5 bg-amber-00 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
               </Link>
-            
             ))}
           </nav>
+          <Button
+            onClick={() => router.push("/contact")}
+            className="bg-blue-600 hover:bg-blue-500"
+          >
+            Contact us
+          </Button>
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsOpen(!isOpen)}
