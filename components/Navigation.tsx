@@ -24,14 +24,6 @@ const Navigation = () => {
                 className="rounded-full"
               />
             </div>
-            <div className="hidden lg:flex flex-col">
-              {/* <span className="font-bold text-lg md:text-xl text-blue-950 tracking-tight">
-                Sahmiye
-              </span> */}
-              {/* <span className="text-xs text-gray-500 font-medium">
-                Application
-              </span> */}
-            </div>
           </Link>
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
