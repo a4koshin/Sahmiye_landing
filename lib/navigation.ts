@@ -12,12 +12,12 @@ export const navbar: Navbar[] = [
   },
   {
     id: 1,
-    name: "how it works",
-    href: "/howitworks",
+    name: "Terms",
+    href: "/terms",
   },
   {
     id: 2,
-    name: "Contact us",
-    href: "/contact",
+    name: "Privacy",
+    href: "/privacy",
   },
 ];
